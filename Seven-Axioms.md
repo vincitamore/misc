@@ -1,5 +1,5 @@
 # The Seven Axioms: Guiding Humanity in the Age of AI  
-*An article addressed to the world, offering first principles for the wise and ethical use of a transformative technology.*
+*First principles for the wise and ethical use of a transformative technology.*
 
 ## Introduction  
 As large language models (LLMs) reshape human thought and discourse, their power demands disciplined stewardship. These tools, forged by human ingenuity, can enlighten, create, and solve, yet they risk fostering deception, dependency, or moral drift if misused. To harness their potential while preserving truth and human flourishing, we must adopt clear principles. Drawing from timeless wisdom and modern insight, this article presents seven axioms—foundational truths to guide individuals, institutions, and societies in righteous and effective LLM interaction. Six axioms are supported by two principles each, and the seventh stands with a single principle, calling us to transcendenceರ
