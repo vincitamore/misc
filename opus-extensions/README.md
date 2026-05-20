@@ -20,6 +20,9 @@ opus-extensions/
 ├── omp-customizations/      source-level patches against the installed omp package
 │   └── strip-emojis.ts         swap ~80 emoji literals for ASCII equivalents (icons, language tags, dialogs)
 │
+├── omp-themes/              TUI color themes for omp
+│   └── horizon.json            my daily-driver — dark, low-contrast, pink/cyan/mint accents (Horizon palette)
+│
 ├── omp-config-example.yml   my ~/.omp/agent/config.yml (model role, theme)
 │
 └── claude-code-hooks/       the original Python hooks for Claude Code (some have omp ports above)
@@ -68,7 +71,11 @@ mkdir -p ~/.omp/customizations
 cp opus-extensions/omp-customizations/strip-emojis.ts ~/.omp/customizations/
 bun ~/.omp/customizations/strip-emojis.ts   # one-time apply; omp-self-heal re-applies after upgrades
 
-# Optional: my model + theme config
+# Optional: horizon theme
+mkdir -p ~/.omp/agent/themes
+cp opus-extensions/omp-themes/horizon.json ~/.omp/agent/themes/
+
+# Optional: my model + theme config (references horizon by name — copy the theme first)
 cp opus-extensions/omp-config-example.yml ~/.omp/agent/config.yml
 ```
 
