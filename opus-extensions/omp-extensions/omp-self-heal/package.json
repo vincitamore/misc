@@ -1,0 +1,10 @@
+{
+  "name": "omp-self-heal",
+  "version": "0.1.0",
+  "description": "Detects when omp upgrades have reverted opus's source-level customizations (currently: emoji strip) and re-applies them automatically at session_start. Notifies the operator to restart so the patches take effect.",
+  "type": "module",
+  "main": "index.ts",
+  "omp": {
+    "extensions": ["./index.ts"]
+  }
+}

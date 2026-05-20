@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "description": "Declares all expected hooks. Self-orient validates checksums against actual files.",
+  "lastVerified": "2026-05-07",
+  "infrastructure": [
+    {
+      "name": "hook_log",
+      "path": "~/.claude/hooks/hook_log.py",
+      "purpose": "Shared execution logger — context manager for hook telemetry",
+      "sha256": "9abd11c4780951b558ad1b9074149934122aae86a3a946039a3d0445e27ab1cd"
+    }
+  ],
+  "hooks": [
+    {
+      "name": "session-start-orient",
+      "event": "SessionStart",
+      "path": "~/.claude/hooks/session-start-orient.py",
+      "purpose": "Auto-orient with org system context at session start",
+      "sha256": "d44e659133e214213b250bd5064f8d5830c7735a0d37f8a23a7781436d91b6ad"
+    },
+    {
+      "name": "user-prompt-context",
+      "event": "UserPromptSubmit",
+      "path": "~/.claude/hooks/user-prompt-context.py",
+      "purpose": "Project-aware context injection on prompt keywords",
+      "sha256": "7da89fac9e10caeeca7fd0da10ab5091897ff6f76566d6d43350c2af9a981495"
+    },
+    {
+      "name": "pre-compact-preserve",
+      "event": "PreCompact",
+      "path": "~/.claude/hooks/pre-compact-preserve.py",
+      "purpose": "Extract critical threads before context compaction",
+      "sha256": "41549d85021d708d42c9e166573f1871db5a06f9324ddc49753d9b4ab31c851f"
+    },
+    {
+      "name": "stop-maintenance-check",
+      "event": "Stop",
+      "path": "~/.claude/hooks/stop-maintenance-check.py",
+      "purpose": "Maintenance vigilance check before session stop",
+      "sha256": "5abdc7e08139a91092fdd69fc474cdc72921d78f8c06b35b19146745801c8c11"
+    },
+    {
+      "name": "post-edit-verify",
+      "event": "PostToolUse",
+      "matcher": "Write|Edit",
+      "path": "~/.claude/hooks/post-edit-verify.py",
+      "purpose": "Verify JSON/YAML syntax after file writes",
+      "sha256": "7d448e53a8731a96dbb3d6acdc5de52a2dac61e0f948b989eface21c59d15993"
+    },
+    {
+      "name": "notify-windows",
+      "event": "Notification",
+      "path": "~/.claude/hooks/notify-windows.ps1",
+      "purpose": "Windows toast notifications for Claude Code events",
+      "sha256": "08cdd5e9bcaf04f36cf2fca26a3562160b81974eb23e72e51228ee92ad9d4990"
+    },
+    {
+      "name": "mcp-observe",
+      "event": "PostToolUse",
+      "matcher": "mcp__examen__",
+      "path": "~/.claude/hooks/mcp-observe.py",
+      "purpose": "Log examen MCP tool invocations for governance visibility",
+      "sha256": "782f3f39ded3608e53531b5f528318891fb79fd86985dfb8e365442e17e4ca3a"
+    }
+  ]
+}

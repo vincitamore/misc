@@ -1,0 +1,10 @@
+{
+  "name": "session-orient",
+  "version": "0.1.0",
+  "description": "Port of ~/.claude/hooks/session-start-orient.py to omp — emits compact session-context block at session_start with task counts, inbox, Mercury queue, due reminders, and pointers to authoritative orientation files.",
+  "type": "module",
+  "main": "index.ts",
+  "omp": {
+    "extensions": ["./index.ts"]
+  }
+}

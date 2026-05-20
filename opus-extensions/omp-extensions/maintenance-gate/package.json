@@ -1,0 +1,10 @@
+{
+  "name": "maintenance-gate",
+  "version": "0.1.0",
+  "description": "Port of stop-maintenance-check.py to omp — synthesizes a continuation turn at turn_end if capture work is owed.",
+  "type": "module",
+  "main": "index.ts",
+  "omp": {
+    "extensions": ["./index.ts"]
+  }
+}

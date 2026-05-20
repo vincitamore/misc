@@ -1,0 +1,10 @@
+{
+  "name": "mercury-observe",
+  "version": "0.1.0",
+  "description": "Restore Mercury's hook-exec.jsonl sensorium under omp — logs examen MCP calls and session lifecycle events using Claude-Code-compatible hook names so Mercury's existing analytics continue to work. Also provides /dream slash command for operator-initiated dream cycles.",
+  "type": "module",
+  "main": "index.ts",
+  "omp": {
+    "extensions": ["./index.ts"]
+  }
+}
